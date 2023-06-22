@@ -1,0 +1,466 @@
+@import url();
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Elementos para el cuerpo */
+body {
+    background-color: slategray;
+}
+
+.wave1{
+    position: sticky;
+	bottom: 0px;
+	z-index: -1;
+    filter: brightness(80%);
+    opacity: 80%;
+    margin-top: -400px;
+    left: 40%;
+    right: 0;
+    transform: translateY(40px);
+}
+
+
+.wave2{
+    margin-top: -350px;
+    height: 310px;
+    width: 100%;
+    position: sticky;
+	bottom: 0px;
+	z-index: -1;
+    filter: brightness(80%);
+    opacity: 40%;
+    transform: translateY(500px);
+}
+
+.wave3{
+    margin-top: -350px;
+    height: 310px;
+    width: 100%;
+    position: sticky;
+	bottom: 0px;
+	z-index: -1;
+    filter: brightness(80%);
+    opacity: 40%;
+    transform: translateY(500px);
+}
+
+
+
+.nav-complete {
+    justify-content: center;
+}
+
+.nav-bacatar {
+    position: relative;
+    border-radius: 50px;
+    background-image: linear-gradient(to right, #03acbf, #2eabb9, #423287);
+}
+
+
+.nav-bacatar::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 30px; /* Ajusta el valor según sea necesario */
+    height: 100%;
+    background-color: #fff; /* O el color de fondo deseado */
+    z-index: 1; /* Asegúrate de que esté por encima del contenido del navbar */
+  }
+
+
+.rectangle1{
+    position: absolute;
+    background-color: #6e00c5;
+    width: 180px;
+    padding: 8px;
+    transform: translate(1250px, 20px);
+    z-index: 999;
+}
+
+.rectangle2{
+    position: absolute;
+    background-color: #10a7bf;
+    width: 100px;
+    padding: 8px;
+    transform: translate(910px, 20px);
+    z-index: 999;
+}
+
+
+.rectangle3{
+    position: absolute;
+    background-color: #43338a;
+    width: 140px;
+    padding: 8px;
+    transform: translate(690px, 98px);
+    z-index: 999;
+}
+
+.rectangle4{
+    position: absolute;
+    background-color: #10a7bf;
+    width: 100px;
+    padding: 8px;
+    transform: translate(1100px, 98px);
+    z-index: 999;
+}
+
+
+
+.navbar-img img {
+    width: 150px;
+}
+
+
+.dropdown{
+    position: static;
+    z-index: 9999;
+}
+
+.dropdown-menu{
+    position: absolute;
+    z-index: 9999;
+}
+
+.dropdown-color{
+    background: #30aec2 !important;
+}
+
+
+.dropdown-color a:hover{
+    color: #fff;
+    border-radius: 0px;
+    color: black;
+}
+
+.dropdown-color a{
+    color: #fff;
+}
+
+/* Elementos para el carrousel margen y fuente */
+.carousel-item p {
+    margin: 20px;
+    font-size: 2vw;
+}
+
+/* Reglas de espaciado para las sescciones de la pagina*/
+
+section {
+    height: auto;
+    width: auto;
+    padding: auto;
+    margin: 2rem 8rem;
+
+}
+
+.navbar-logotipo img {
+    display: none;
+    width: 150px;
+}
+
+
+
+
+ul li a {
+    margin: none;
+    justify-content: center;
+    border-radius: 20px;
+    
+}
+
+ul li a:hover {
+    animation: BGgradient 15s ease infinite;
+    background-color: #6667AB;
+    color: #888;
+    border-radius: 15px;
+    border-color: none;
+}
+
+/* Carrousel elementos para el centrado */
+
+.carousel-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Carrousel elementos para la imagen */
+
+.carousel-item img {
+    object-fit: contain;
+    /* Agrega esta línea para ajustar las imágenes sin distorsión */
+    filter: brightness(70%);
+    /* Ajusta el nivel de brillo de la imagen */
+    max-height: 70vh;
+    /* Ajusta la altura máxima de la imagen */
+    max-width: 100%;
+    /* Ajusta el ancho máximo de la imagen */
+    width: auto;
+    height: auto;
+    margin: auto;
+    object-position: center;
+
+}
+
+.carousel-text {
+    position: absolute;
+    padding: 6%;
+    max-width: 100%;
+  }
+
+
+.carousel-control-next {
+    background-color: none;
+}
+
+/* Bordes negros de referencia para los botones */
+
+.pintor {
+    background-color: rgb(0, 0, 0) !important;
+}
+
+
+.card-body {
+    font-size: 40px;
+}
+
+.tittle{
+    position: relative;
+    border-radius: 8px;
+    justify-content: center;
+    text-align: center;
+    margin: auto;
+    width: 80%;
+    padding: 6px;
+    background-image: linear-gradient(to right, #03acbf, #2eabb9, #423287);
+}
+
+
+.nosotros {
+    width: 100%;
+    padding: 2rem 5px;
+    margin-top: 6rem;
+
+}
+
+.gallery img{
+    border-radius: 50px 0 50px 0;
+}
+
+
+
+/* Estilos del boton */
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+/* Acciones del boton */
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+.footer-color{
+    background: #43338a;
+
+}
+
+.footer-color p, span, h6, i{
+    color: #fff;
+
+
+}
+
+
+@media screen and (max-width: 1800px) {
+    
+    .rectangle1{
+        display: none;
+    }
+    
+    .rectangle2{
+       display: none;
+    }
+    
+    
+    .rectangle3{
+       display: none;
+    }
+    
+    .rectangle4{
+        display: none;
+    }
+
+    .wave2{
+        display: none;
+    }
+
+    .wave3{
+        display: none;
+    }
+
+    .quienes-somos p{
+        color: black !important;
+    }
+
+
+
+
+}
+
+@media screen and (max-width: 1350px) {
+    
+    nav{
+        margin: 0 0 !important;
+    }
+
+
+    .nav-bacatar {
+        margin: 0 0;
+
+    }
+
+    .nav-bacatar::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 0px; /* Ajusta el valor según sea necesario */
+        height: 100%;
+        z-index: 1; /* Asegúrate de que esté por encima del contenido del navbar */
+      }
+
+    .navbar-logotipo img {
+        display: flex;
+    }
+
+    .nav-complete {
+        margin: 0 0 !important;
+        display: block;
+    }
+
+
+
+    .navbar-img img {
+        display: none;
+    }
+
+    .wave1{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 1199px) {
+    
+    
+    .wave{
+        display: none;
+    }
+
+    .tittle{
+        width: 50%;
+
+    }
+
+
+
+
+}
+/* Reglas responsive */
+
+@media screen and (max-width: 1050px) {
+    section {
+        margin: auto;
+    }
+
+
+
+    p {
+        font-size: 2vw;
+    }
+
+    .carousel-item img {
+        max-height: 50vh;
+        /* Ajusta la altura máxima de la imagen */
+        max-width: 100%;
+        /* Ajusta la anchura máxima de la imagen */
+    }
+
+    .qr{
+        display: none;
+    }
+
+    .img-mariposas img{
+        width: 100% !important;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .nav-bacatar {
+        border-radius: 10px;
+    }
+
+    .img-mariposas img{
+        width: 100%;
+    }
+
+
+
+}
+
+@media (max-width: 576px) {
+    .carousel-text p{
+      font-size: 17px;
+    }
+
+    .tittle{
+        width: 100%;
+    }
+
+  }
+
+  @media (max-width: 456px) {
+    .carousel-text p{
+      font-size: 14px;
+    }
+
+    .tittle{
+        width: 100%;
+        padding: 2px;
+    }
+
+  }
+  
+  @media (min-width: 577px) and (max-width: 991px) {
+    .carousel-text p{
+      font-size: 22px;
+    }
+
+    .tittle{
+        width: 100%;
+    }
+  }
+  
+  @media (min-width: 992px) and (max-width: 1200px) {
+    .carousel-text p{
+      font-size: 30px;
+    }
+
+    .img-mariposas img{
+        width: 100%;
+    }
+  }
+    
