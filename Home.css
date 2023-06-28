@@ -1,4 +1,12 @@
-@import url();
+@font-face {
+    font-family: 'CaviarDreams';
+    src: url('font/CaviarDreams.ttf') format('truetype');
+    font-weight: bolder !important;
+    font-style: normal !important;
+    color: #00000000;
+    
+}
+
 
 * {
     margin: 0;
@@ -9,12 +17,13 @@
 /* Elementos para el cuerpo */
 body {
     background-color: slategray;
+    font-family: 'CaviarDreams', CaviarDreams !important;
 }
 
-.wave1{
+.wave1 {
     position: sticky;
-	bottom: 0px;
-	z-index: -1;
+    bottom: 0px;
+    z-index: -1;
     filter: brightness(80%);
     opacity: 80%;
     margin-top: -400px;
@@ -24,28 +33,28 @@ body {
 }
 
 
-.wave2{
-    margin-top: -350px;
-    height: 310px;
+.wave2 {
+    margin-top: -400px;
+    height: 420px;
     width: 100%;
     position: sticky;
-	bottom: 0px;
-	z-index: -1;
+    bottom: 0px;
+    z-index: -1;
     filter: brightness(80%);
     opacity: 40%;
-    transform: translateY(500px);
+    transform: translateY(540px);
 }
 
-.wave3{
-    margin-top: -350px;
-    height: 310px;
+.wave3 {
+    margin-top: -400px;
+    height: 420px;
     width: 100%;
     position: sticky;
-	bottom: 0px;
-	z-index: -1;
+    bottom: 0px;
+    z-index: -1;
     filter: brightness(80%);
     opacity: 40%;
-    transform: translateY(500px);
+    transform: translateY(540px);
 }
 
 
@@ -66,14 +75,17 @@ body {
     position: absolute;
     top: 0;
     left: 0;
-    width: 30px; /* Ajusta el valor según sea necesario */
+    width: 30px;
+    /* Ajusta el valor según sea necesario */
     height: 100%;
-    background-color: #fff; /* O el color de fondo deseado */
-    z-index: 1; /* Asegúrate de que esté por encima del contenido del navbar */
-  }
+    background-color: #fff;
+    /* O el color de fondo deseado */
+    z-index: 1;
+    /* Asegúrate de que esté por encima del contenido del navbar */
+}
 
 
-.rectangle1{
+.rectangle1 {
     position: absolute;
     background-color: #6e00c5;
     width: 180px;
@@ -82,7 +94,7 @@ body {
     z-index: 999;
 }
 
-.rectangle2{
+.rectangle2 {
     position: absolute;
     background-color: #10a7bf;
     width: 100px;
@@ -92,7 +104,7 @@ body {
 }
 
 
-.rectangle3{
+.rectangle3 {
     position: absolute;
     background-color: #43338a;
     width: 140px;
@@ -101,7 +113,7 @@ body {
     z-index: 999;
 }
 
-.rectangle4{
+.rectangle4 {
     position: absolute;
     background-color: #10a7bf;
     width: 100px;
@@ -117,28 +129,28 @@ body {
 }
 
 
-.dropdown{
+.dropdown {
     position: static;
     z-index: 9999;
 }
 
-.dropdown-menu{
+.dropdown-menu {
     position: absolute;
     z-index: 9999;
 }
 
-.dropdown-color{
+.dropdown-color {
     background: #30aec2 !important;
 }
 
 
-.dropdown-color a:hover{
+.dropdown-color a:hover {
     color: #fff;
     border-radius: 0px;
     color: black;
 }
 
-.dropdown-color a{
+.dropdown-color a {
     color: #fff;
 }
 
@@ -170,7 +182,7 @@ ul li a {
     margin: none;
     justify-content: center;
     border-radius: 20px;
-    
+
 }
 
 ul li a:hover {
@@ -180,6 +192,7 @@ ul li a:hover {
     border-radius: 15px;
     border-color: none;
 }
+
 
 /* Carrousel elementos para el centrado */
 
@@ -211,7 +224,7 @@ ul li a:hover {
     position: absolute;
     padding: 6%;
     max-width: 100%;
-  }
+}
 
 
 .carousel-control-next {
@@ -229,7 +242,7 @@ ul li a:hover {
     font-size: 40px;
 }
 
-.tittle{
+.tittle {
     position: relative;
     border-radius: 8px;
     justify-content: center;
@@ -248,7 +261,7 @@ ul li a:hover {
 
 }
 
-.gallery img{
+.gallery img {
     border-radius: 50px 0 50px 0;
 }
 
@@ -273,46 +286,84 @@ ul li a:hover {
 }
 
 
-.footer-color{
+.footer-color {
     background: #43338a;
 
 }
 
-.footer-color p, span, h6, i{
+.footer-color p,
+span,
+h6,
+i {
     color: #fff;
 
 
 }
 
+embed {
+    border: 1px solid #ccc;
+}
+
+::-webkit-scrollbar {
+    scrollbar-width: none !important;
+}
+
+
+
+/* Gallery format cards */
+
+.card{
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
+}
+
+.card h5{
+    font-weight: bolder !important;
+}
+
+.card p{
+    font-weight: normal !important;
+}
+
+.img-card img{
+    transform: scale(1.04);
+    transition: 0.3s ease;
+}
+
+.img-card img:hover{
+    transform: scale(1.06);
+    box-shadow: 0 4px 6px rgba(2.8, 0.8, 0.8, 0.2);
+}
+
+
 
 @media screen and (max-width: 1800px) {
-    
-    .rectangle1{
-        display: none;
-    }
-    
-    .rectangle2{
-       display: none;
-    }
-    
-    
-    .rectangle3{
-       display: none;
-    }
-    
-    .rectangle4{
+
+    .rectangle1 {
         display: none;
     }
 
-    .wave2{
+    .rectangle2 {
         display: none;
     }
 
-    .wave3{
+
+    .rectangle3 {
         display: none;
     }
 
-    .quienes-somos p{
+    .rectangle4 {
+        display: none;
+    }
+
+    .wave2 {
+        display: none;
+    }
+
+    .wave3 {
+        display: none;
+    }
+
+    .quienes-somos p {
         color: black !important;
     }
 
@@ -322,8 +373,8 @@ ul li a:hover {
 }
 
 @media screen and (max-width: 1350px) {
-    
-    nav{
+
+    nav {
         margin: 0 0 !important;
     }
 
@@ -338,10 +389,12 @@ ul li a:hover {
         position: absolute;
         top: 0;
         left: 0;
-        width: 0px; /* Ajusta el valor según sea necesario */
+        width: 0px;
+        /* Ajusta el valor según sea necesario */
         height: 100%;
-        z-index: 1; /* Asegúrate de que esté por encima del contenido del navbar */
-      }
+        z-index: 1;
+        /* Asegúrate de que esté por encima del contenido del navbar */
+    }
 
     .navbar-logotipo img {
         display: flex;
@@ -358,19 +411,19 @@ ul li a:hover {
         display: none;
     }
 
-    .wave1{
+    .wave1 {
         display: none;
     }
 }
 
 @media screen and (max-width: 1199px) {
-    
-    
-    .wave{
+
+
+    .wave {
         display: none;
     }
 
-    .tittle{
+    .tittle {
         width: 50%;
 
     }
@@ -379,6 +432,7 @@ ul li a:hover {
 
 
 }
+
 /* Reglas responsive */
 
 @media screen and (max-width: 1050px) {
@@ -399,11 +453,11 @@ ul li a:hover {
         /* Ajusta la anchura máxima de la imagen */
     }
 
-    .qr{
+    .qr {
         display: none;
     }
 
-    .img-mariposas img{
+    .img-mariposas img {
         width: 100% !important;
     }
 }
@@ -413,54 +467,75 @@ ul li a:hover {
         border-radius: 10px;
     }
 
-    .img-mariposas img{
+    .img-mariposas img {
         width: 100%;
     }
+
+    .img-card img{
+        transform: none;
+        transition: none;
+    }
+    
+    .img-card img:hover{
+        transform: none;
+        box-shadow: 0 4px 6px rgba(2.8, 0.8, 0.8, 0.2);
+    }
+    
+    .tittle{
+        width: 100% !important;
+    }
+
+
+
+
+
+
+
+
 
 
 
 }
 
 @media (max-width: 576px) {
-    .carousel-text p{
-      font-size: 17px;
+    .carousel-text p {
+        font-size: 17px;
     }
 
-    .tittle{
+    .tittle {
         width: 100%;
     }
 
-  }
+}
 
-  @media (max-width: 456px) {
-    .carousel-text p{
-      font-size: 14px;
+@media (max-width: 456px) {
+    .carousel-text p {
+        font-size: 14px;
     }
 
-    .tittle{
+    .tittle {
         width: 100%;
         padding: 2px;
     }
 
-  }
-  
-  @media (min-width: 577px) and (max-width: 991px) {
-    .carousel-text p{
-      font-size: 22px;
+}
+
+@media (min-width: 577px) and (max-width: 991px) {
+    .carousel-text p {
+        font-size: 22px;
     }
 
-    .tittle{
+    .tittle {
         width: 100%;
     }
-  }
-  
-  @media (min-width: 992px) and (max-width: 1200px) {
-    .carousel-text p{
-      font-size: 30px;
+}
+
+@media (min-width: 992px) and (max-width: 1200px) {
+    .carousel-text p {
+        font-size: 30px;
     }
 
-    .img-mariposas img{
+    .img-mariposas img {
         width: 100%;
     }
-  }
-    
+}
